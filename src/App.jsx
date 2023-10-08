@@ -8,6 +8,7 @@ import Features from "./Components/Features";
 import Download from "./Components/Download";
 import Frequently from "./Components/Frequently";
 import Joined from "./Components/Joined";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -18,9 +19,9 @@ function App() {
         <Features />
         <Download />
         <Frequently />
-        <Joined/>
+        <Joined />
       </Stack>
-
+      <Footer/>
       {/* <NavMobile /> */}
     </>
   );

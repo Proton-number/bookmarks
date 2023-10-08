@@ -29,9 +29,36 @@ function Nav() {
           <Box component="img" src={bookmark} />
 
           <Stack direction="row" spacing={4} sx={{ alignItems: "center" }}>
-            <Typography sx={{cursor:'pointer'}}>FEATURES</Typography>
-            <Typography sx={{cursor:'pointer'}}>PRICING</Typography>
-            <Typography sx={{cursor:'pointer'}}>CONTACT</Typography>
+            <Typography
+              sx={{
+                cursor: "pointer",
+                "&:hover": {
+                  color: "hsl(0, 100%, 64%)",
+                },
+              }}
+            >
+              FEATURES
+            </Typography>
+            <Typography
+              sx={{
+                cursor: "pointer",
+                "&:hover": {
+                  color: "hsl(0, 100%, 64%)",
+                },
+              }}
+            >
+              PRICING
+            </Typography>
+            <Typography
+              sx={{
+                cursor: "pointer",
+                "&:hover": {
+                  color: "hsl(0, 100%, 64%)",
+                },
+              }}
+            >
+              CONTACT
+            </Typography>
 
             <ThemeProvider theme={theme}>
               <Button variant="contained" disableElevation>
