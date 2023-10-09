@@ -232,8 +232,7 @@ function Features() {
                 sx={{
                   backgroundColor: "hsl(227, 57%, 53%)",
                   position: "relative",
-                
-
+                  left: { lg: "-40px" },
                   padding: { lg: "200px" },
                   borderTopRightRadius: "50%",
                   borderBottomRightRadius: "50%",

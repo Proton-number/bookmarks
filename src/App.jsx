@@ -15,14 +15,14 @@ function App() {
     <>
       <Stack spacing={20}>
         <Nav />
+        <NavMobile />
         <Bookmark />
         <Features />
         <Download />
         <Frequently />
         <Joined />
       </Stack>
-      <Footer/>
-      {/* <NavMobile /> */}
+      <Footer />
     </>
   );
 }

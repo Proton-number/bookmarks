@@ -69,7 +69,7 @@ function Frequently() {
                 </ThemeProvider>
               }
             >
-              <Typography>What is Bookmark?</Typography>
+              <Typography sx={{"&:hover":{color:'hsl(0, 100%, 50%)'}}}>What is Bookmark?</Typography>
             </AccordionSummary>
 
             <AccordionDetails>
