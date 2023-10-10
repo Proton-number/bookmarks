@@ -48,7 +48,7 @@ function Features() {
             alignItems: "center",
           }}
         >
-          <Typography sx={{ width: "42%" }}>
+          <Typography sx={{ width: { sm: "60%", lg: "42%" } }}>
             Our aim is to make it quick and easy for you to access your
             favourite websites. Your bookmarks sync between your devices so you
             can access them on the go.
@@ -67,7 +67,13 @@ function Features() {
               indicatorColor="secondary"
               value={tabIndex}
               onChange={handleChange}
-              sx={{ "& .MuiTabs-flexContainer": { gap: { sm: 6, lg: 8 } } }}
+              sx={{
+                "& .MuiTabs-flexContainer": {
+                  gap: { sm: 6, lg: 8 },
+                  display: "flex",
+                  flexDirection: { xs: "column", sm: "row", lg: "row" },
+                },
+              }}
             >
               <Tab label="Simple Bookmarking" />
               <Tab label="Speedy Searching" />
@@ -78,7 +84,7 @@ function Features() {
           {tabIndex === 0 && (
             <Stack
               spacing={{ lg: 30 }}
-              direction={{ sm: "row" }}
+              direction={{ sm: "column", lg: "row" }}
               sx={{
                 display: "flex",
                 alignItems: "center",
@@ -88,45 +94,65 @@ function Features() {
                 sx={{
                   backgroundColor: "hsl(227, 57%, 53%)",
                   position: "relative",
-                  padding: { lg: "200px" },
+                  padding: { sm: "160px", lg: "200px" },
                   borderTopRightRadius: "50%",
                   borderBottomRightRadius: "50%",
                   width: {
                     lg: "12%",
                   },
+                  left: { sm: "-231px", lg: "0" },
                 }}
               >
                 <Box
                   component={motion.img}
                   src={tab1}
-                  sx={{ position: "absolute", top: "-2px", left: "130px" }}
+                  sx={{
+                    position: "absolute",
+                    top: "-2px",
+                    left: "130px",
+                    width: {
+                      sm: "420px",
+                      lg: "100%",
+                    },
+                  }}
                 />
               </Box>
 
               <Stack spacing={1.4}>
                 <Typography
                   variant="h2"
-                  sx={{ textAlign: "left", width: { lg: "100%" } }}
+                  sx={{
+                    textAlign: { sm: "center", lg: "left" },
+                    width: { lg: "100%" },
+                  }}
                 >
                   Bookmark in one click
                 </Typography>
-                <Typography
+
+                <Box
                   sx={{
-                    textAlign: "left",
-                    width: { lg: "80%" },
-                    opacity: "70%",
+                    display: "flex",
+                    justifyContent: { sm: "center", lg: "left" },
                   }}
                 >
-                  {" "}
-                  Organise your bookmarks however you like. Our simple
-                  drag-and-drop interface give you complete control over how you
-                  manage your favourite sites.{" "}
-                </Typography>
+                  <Typography
+                    sx={{
+                      textAlign: { sm: "center", lg: "left" },
+                      width: { sm: "50%", lg: "80%" },
+                      opacity: "70%",
+                    }}
+                  >
+                    {" "}
+                    Organise your bookmarks however you like. Our simple
+                    drag-and-drop interface give you complete control over how
+                    you manage your favourite sites.{" "}
+                  </Typography>
+                </Box>
 
                 <Stack
                   spacing={4}
                   direction="row"
-                  sx={{ justifyContent: "left" }}
+                  sx={{ justifyContent: { sm: "center", lg: "left" } }}
                 >
                   <ThemeProvider theme={theme}>
                     <Button
@@ -150,7 +176,7 @@ function Features() {
           {tabIndex === 1 && (
             <Stack
               spacing={{ lg: 30 }}
-              direction={{ sm: "row" }}
+              direction={{ sm: "column", lg: "row" }}
               sx={{
                 display: "flex",
                 alignItems: "center",
@@ -160,8 +186,8 @@ function Features() {
                 sx={{
                   backgroundColor: "hsl(227, 57%, 53%)",
                   position: "relative",
-                  left: { lg: "-40px" },
-                  padding: { lg: "200px" },
+                  left: { sm: "-231px", lg: "-40px" },
+                  padding: { sm: "160px", lg: "200px" },
                   borderTopRightRadius: "50%",
                   borderBottomRightRadius: "50%",
                   width: {
@@ -172,34 +198,53 @@ function Features() {
                 <Box
                   component={motion.img}
                   src={tab2}
-                  sx={{ position: "absolute", top: "-13px", left: "180px" }}
+                  sx={{
+                    position: "absolute",
+                    top: "-13px",
+                    left: "180px",
+                    width: {
+                      sm: "371px",
+                      lg: "100%",
+                    },
+                  }}
                 />
               </Box>
 
               <Stack spacing={1.4}>
                 <Typography
                   variant="h2"
-                  sx={{ textAlign: "left", width: { lg: "100%" } }}
+                  sx={{
+                    textAlign: { sm: "center", lg: "left" },
+                    width: { lg: "100%" },
+                  }}
                 >
                   Intelligent search
                 </Typography>
-                <Typography
+
+                <Box
                   sx={{
-                    textAlign: "left",
-                    width: { lg: "80%" },
-                    opacity: "70%",
+                    display: "flex",
+                    justifyContent: { sm: "center", lg: "left" },
                   }}
                 >
-                  {" "}
-                  Our powerful search feture will help you find saved sites in
-                  no time at all. No need to trawl through all of your
-                  bookmarks.{" "}
-                </Typography>
+                  <Typography
+                    sx={{
+                      textAlign: { sm: "center", lg: "left" },
+                      width: { sm: "50%", lg: "80%" },
+                      opacity: "70%",
+                    }}
+                  >
+                    {" "}
+                    Our powerful search feture will help you find saved sites in
+                    no time at all. No need to trawl through all of your
+                    bookmarks.{" "}
+                  </Typography>
+                </Box>
 
                 <Stack
                   spacing={4}
                   direction="row"
-                  sx={{ justifyContent: "left" }}
+                  sx={{ justifyContent: { sm: "center", lg: "left" } }}
                 >
                   <ThemeProvider theme={theme}>
                     <Button
@@ -222,7 +267,7 @@ function Features() {
           {tabIndex === 2 && (
             <Stack
               spacing={{ lg: 30 }}
-              direction={{ sm: "row" }}
+              direction={{ sm: "column", lg: "row" }}
               sx={{
                 display: "flex",
                 alignItems: "center",
@@ -232,8 +277,8 @@ function Features() {
                 sx={{
                   backgroundColor: "hsl(227, 57%, 53%)",
                   position: "relative",
-                  left: { lg: "-40px" },
-                  padding: { lg: "200px" },
+                  left: { sm: "-231px", lg: "-40px" },
+                  padding: { sm: "160px", lg: "200px" },
                   borderTopRightRadius: "50%",
                   borderBottomRightRadius: "50%",
                   width: {
@@ -244,34 +289,53 @@ function Features() {
                 <Box
                   component={motion.img}
                   src={tab3}
-                  sx={{ position: "absolute", top: "-13px", left: "180px" }}
+                  sx={{
+                    position: "absolute",
+                    top: "-13px",
+                    left: "180px",
+                    width: {
+                      sm: "371px",
+                      lg: "100%",
+                    },
+                  }}
                 />
               </Box>
 
               <Stack spacing={1.4}>
                 <Typography
                   variant="h2"
-                  sx={{ textAlign: "left", width: { lg: "100%" } }}
+                  sx={{
+                    textAlign: { sm: "center", lg: "left" },
+                    width: { lg: "100%" },
+                  }}
                 >
                   Share your bookmarks
                 </Typography>
-                <Typography
+
+                <Box
                   sx={{
-                    textAlign: "left",
-                    width: { lg: "80%" },
-                    opacity: "70%",
+                    display: "flex",
+                    justifyContent: { sm: "center", lg: "left" },
                   }}
                 >
-                  {" "}
-                  Easily share your bookmarks and collections with others.
-                  Create a shareable link that you can send at the click of a
-                  button.{" "}
-                </Typography>
+                  <Typography
+                    sx={{
+                      textAlign: { sm: "center", lg: "left" },
+                      width: { sm: "50%", lg: "80%" },
+                      opacity: "70%",
+                    }}
+                  >
+                    {" "}
+                    Easily share your bookmarks and collections with others.
+                    Create a shareable link that you can send at the click of a
+                    button.{" "}
+                  </Typography>
+                </Box>
 
                 <Stack
                   spacing={4}
                   direction="row"
-                  sx={{ justifyContent: "left" }}
+                  sx={{ justifyContent: { sm: "center", lg: "left" } }}
                 >
                   <ThemeProvider theme={theme}>
                     <Button

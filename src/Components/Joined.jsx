@@ -9,7 +9,6 @@ import {
   TextField,
 } from "@mui/material";
 
-
 function Joined() {
   const theme = createTheme({
     palette: {
@@ -20,7 +19,14 @@ function Joined() {
   });
   return (
     <>
-      <Stack spacing={2} sx={{backgroundColor:'hsl(228, 68%, 57%)', color:'white', p:{lg:'20px'},}}>
+      <Stack
+        spacing={2}
+        sx={{
+          backgroundColor: "hsl(228, 68%, 57%)",
+          color: "white",
+          p: { lg: "20px" },
+        }}
+      >
         <Typography variant="body2">
           <b>35,000+ ALREADY JOINED</b>
         </Typography>
@@ -44,7 +50,17 @@ function Joined() {
             alignItems: "center",
           }}
         >
-          <TextField placeholder="Enter your email address" type="email" sx={{backgroundColor:'white'}} />
+          <TextField
+            placeholder="Enter your email address"
+            type="email"
+            InputProps={{
+              style: {
+                borderRadius: "25px",
+                color: "black",
+                backgroundColor:'white'
+              },
+            }}
+          />
           <ThemeProvider theme={theme}>
             <Button
               variant="contained"
@@ -55,8 +71,7 @@ function Joined() {
             </Button>
           </ThemeProvider>
         </Stack>
-          </Stack>
-          
+      </Stack>
     </>
   );
 }

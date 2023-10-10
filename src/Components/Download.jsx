@@ -15,6 +15,14 @@ import opera from "/src/images/logo-opera.svg";
 import dots from "/src/images/bg-dots.svg";
 
 function Download() {
+  
+  const theme = createTheme({
+    palette: {
+      primary: {
+        main: "hsl(228, 68%, 57%)",
+      },
+    },
+  });
   return (
     <>
       <Stack spacing={4}>
@@ -53,6 +61,7 @@ function Download() {
                 Minimum version 62
               </Typography>
               <Box component={motion.img} src={dots} />
+              <ThemeProvider theme={theme}>
               <Button
                 variant="contained"
                 disableElevation
@@ -60,9 +69,10 @@ function Download() {
               >
                 <b> Add & Install Extension</b>
               </Button>
+             </ThemeProvider>
             </Stack>
           </Paper>
-          <Paper elevation={6}>
+          <Paper style={{marginTop:{lg:'100px'}}} elevation={6}>
             <Stack spacing={3} sx={{ padding: "15px" }}>
               <Box>
                 <Box
@@ -76,6 +86,7 @@ function Download() {
                 Minimum version 56
               </Typography>
               <Box component={motion.img} src={dots} />
+              <ThemeProvider theme={theme}>
               <Button
                 variant="contained"
                 disableElevation
@@ -83,10 +94,12 @@ function Download() {
               >
                <b> Add & Install Extension</b>
               </Button>
+             </ThemeProvider>
             </Stack>
           </Paper>
-          <Paper elevation={6}>
-            <Stack spacing={3} sx={{ padding: "15px" }}>
+         
+          <Paper   elevation={6}>
+            <Stack  spacing={3} sx={{ padding: "15px"}}>
               <Box>
                 <Box
                   component={motion.img}
@@ -99,6 +112,7 @@ function Download() {
                 Minimum version 46
               </Typography>
               <Box component={motion.img} src={dots} />
+              <ThemeProvider theme={theme}>
               <Button
                 variant="contained"
                 disableElevation
@@ -106,8 +120,10 @@ function Download() {
               >
                  <b> Add & Install Extension</b>
               </Button>
+             </ThemeProvider>
             </Stack>
           </Paper>
+          
         </Stack>
       </Stack>
     </>
