@@ -18,11 +18,11 @@ function App() {
         <NavMobile />
         <Bookmark />
         <Features />
-        {/* <Download />
+        <Download />
         <Frequently />
-        <Joined /> */}
+        <Joined /> 
       </Stack>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

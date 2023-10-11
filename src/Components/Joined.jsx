@@ -24,7 +24,7 @@ function Joined() {
         sx={{
           backgroundColor: "hsl(228, 68%, 57%)",
           color: "white",
-          p: { lg: "20px" },
+          p: { sm:'18px', lg: "20px" },
         }}
       >
         <Typography variant="body2">

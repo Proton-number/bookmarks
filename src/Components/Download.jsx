@@ -44,10 +44,10 @@ function Download() {
 
               <Stack
                   spacing={4}
-          direction={{ xs: "column", sm: "row" }}
+          direction={{ xs: "column", sm:'column', lg: "row" }}
           sx={{ justifyContent: "center", alignItems: "center" }}
         >
-          <Paper elevation={6}>
+          <Paper elevation={12}>
             <Stack spacing={3} sx={{ padding: "15px" }}>
               <Box>
                 <Box
@@ -72,7 +72,7 @@ function Download() {
              </ThemeProvider>
             </Stack>
           </Paper>
-          <Paper style={{marginTop:{lg:'100px'}}} elevation={6}>
+          <Paper style={{marginTop:{lg:'100px'}}} elevation={12}>
             <Stack spacing={3} sx={{ padding: "15px" }}>
               <Box>
                 <Box
@@ -98,7 +98,7 @@ function Download() {
             </Stack>
           </Paper>
          
-          <Paper   elevation={6}>
+          <Paper   elevation={12}>
             <Stack  spacing={3} sx={{ padding: "15px"}}>
               <Box>
                 <Box

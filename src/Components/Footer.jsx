@@ -17,9 +17,14 @@ function Footer() {
     <Box
       sx={{
         p: {
+          sm:'20px',
           lg: "25px",
         },
         display: "flex",
+        flexDirection: {
+          xs: 'column',
+          sm:'row'
+        },
         justifyContent: "space-around",
         alignItems: "center",
         color: "white",
@@ -29,7 +34,7 @@ function Footer() {
       <Stack
         direction={{ sm: "row" }}
         sx={{ alignItems: "center" }}
-        spacing={{ lg: 8 }}
+        spacing={{sm:4, lg: 8 }}
       >
         <Box
           component="img"
@@ -73,7 +78,7 @@ function Footer() {
         </Typography>
       </Stack>
 
-      <Stack direction={{ sm: "row" }} spacing={{ lg: 4 }}>
+      <Stack direction={{ sm: "row" }} spacing={{ sm:2.5, lg: 4 }}>
         <Box component="img" src={facebook} />
         <Box component="img" src={twitter} />
       </Stack>

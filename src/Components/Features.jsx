@@ -204,7 +204,7 @@ function Features() {
                     left: "180px",
                     width: {
                       sm: "371px",
-                      lg: "100%",
+                      lg: "90%",
                     },
                   }}
                 />
@@ -295,7 +295,7 @@ function Features() {
                     left: "180px",
                     width: {
                       sm: "371px",
-                      lg: "100%",
+                      lg: "90%",
                     },
                   }}
                 />
