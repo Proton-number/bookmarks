@@ -48,7 +48,9 @@ function Features() {
             alignItems: "center",
           }}
         >
-          <Typography sx={{ width: { sm: "60%", lg: "42%" } }}>
+          <Typography
+            sx={{ width: { xs: "72%", sm: "60%", lg: "42%", opacity: "70%" } }}
+          >
             Our aim is to make it quick and easy for you to access your
             favourite websites. Your bookmarks sync between your devices so you
             can access them on the go.
@@ -94,13 +96,14 @@ function Features() {
                 sx={{
                   backgroundColor: "hsl(227, 57%, 53%)",
                   position: "relative",
-                  padding: { sm: "160px", lg: "200px" },
+                  padding: { xs: "130px", sm: "160px", lg: "200px" },
                   borderTopRightRadius: "50%",
                   borderBottomRightRadius: "50%",
                   width: {
+                    xs: "4%",
                     lg: "12%",
                   },
-                  left: { sm: "-231px", lg: "0" },
+                  left: { xs: "-68px", sm: "-231px", lg: "0" },
                 }}
               >
                 <Box
@@ -109,8 +112,9 @@ function Features() {
                   sx={{
                     position: "absolute",
                     top: "-2px",
-                    left: "130px",
+                    left: { xs: "50px", sm: "130px" },
                     width: {
+                      xs: "280px",
                       sm: "420px",
                       lg: "100%",
                     },
@@ -122,7 +126,7 @@ function Features() {
                 <Typography
                   variant="h2"
                   sx={{
-                    textAlign: { sm: "center", lg: "left" },
+                    textAlign: { xs: "center", sm: "center", lg: "left" },
                     width: { lg: "100%" },
                   }}
                 >
@@ -132,13 +136,13 @@ function Features() {
                 <Box
                   sx={{
                     display: "flex",
-                    justifyContent: { sm: "center", lg: "left" },
+                    justifyContent: { xs: "center", sm: "center", lg: "left" },
                   }}
                 >
                   <Typography
                     sx={{
                       textAlign: { sm: "center", lg: "left" },
-                      width: { sm: "50%", lg: "80%" },
+                      width: { xs: "70%", sm: "50%", lg: "80%" },
                       opacity: "70%",
                     }}
                   >
@@ -152,7 +156,9 @@ function Features() {
                 <Stack
                   spacing={4}
                   direction="row"
-                  sx={{ justifyContent: { sm: "center", lg: "left" } }}
+                  sx={{
+                    justifyContent: { xs: "center", sm: "center", lg: "left" },
+                  }}
                 >
                   <ThemeProvider theme={theme}>
                     <Button
@@ -186,11 +192,12 @@ function Features() {
                 sx={{
                   backgroundColor: "hsl(227, 57%, 53%)",
                   position: "relative",
-                  left: { sm: "-231px", lg: "-40px" },
-                  padding: { sm: "160px", lg: "200px" },
+                  left: { xs: "-58px", sm: "-231px", lg: "-40px" },
+                  padding: { xs: "150px", sm: "160px", lg: "200px" },
                   borderTopRightRadius: "50%",
                   borderBottomRightRadius: "50%",
                   width: {
+                    xs: "4%",
                     lg: "12%",
                   },
                 }}
@@ -201,8 +208,9 @@ function Features() {
                   sx={{
                     position: "absolute",
                     top: "-13px",
-                    left: "180px",
+                    left: {xs:'80px',sm:"180px"},
                     width: {
+                      xs: "280px",
                       sm: "371px",
                       lg: "90%",
                     },
@@ -214,7 +222,7 @@ function Features() {
                 <Typography
                   variant="h2"
                   sx={{
-                    textAlign: { sm: "center", lg: "left" },
+                    textAlign: { xs: "center", sm: "center", lg: "left" },
                     width: { lg: "100%" },
                   }}
                 >
@@ -224,13 +232,13 @@ function Features() {
                 <Box
                   sx={{
                     display: "flex",
-                    justifyContent: { sm: "center", lg: "left" },
+                    justifyContent: { xs: "center", sm: "center", lg: "left" },
                   }}
                 >
                   <Typography
                     sx={{
-                      textAlign: { sm: "center", lg: "left" },
-                      width: { sm: "50%", lg: "80%" },
+                      textAlign: { xs: "center", sm: "center", lg: "left" },
+                      width: { xs: "70%", sm: "50%", lg: "80%" },
                       opacity: "70%",
                     }}
                   >
@@ -244,7 +252,9 @@ function Features() {
                 <Stack
                   spacing={4}
                   direction="row"
-                  sx={{ justifyContent: { sm: "center", lg: "left" } }}
+                  sx={{
+                    justifyContent: { xs: "center", sm: "center", lg: "left" },
+                  }}
                 >
                   <ThemeProvider theme={theme}>
                     <Button
@@ -267,7 +277,7 @@ function Features() {
           {tabIndex === 2 && (
             <Stack
               spacing={{ lg: 30 }}
-              direction={{ sm: "column", lg: "row" }}
+              direction={{ xs: "column", sm: "column", lg: "row" }}
               sx={{
                 display: "flex",
                 alignItems: "center",
@@ -277,11 +287,12 @@ function Features() {
                 sx={{
                   backgroundColor: "hsl(227, 57%, 53%)",
                   position: "relative",
-                  left: { sm: "-231px", lg: "-40px" },
-                  padding: { sm: "160px", lg: "200px" },
+                  left: { xs: "-58px", sm: "-231px", lg: "-40px" },
+                  padding: { xs: "150px", sm: "160px", lg: "200px" },
                   borderTopRightRadius: "50%",
                   borderBottomRightRadius: "50%",
                   width: {
+                    xs: "4%",
                     lg: "12%",
                   },
                 }}
@@ -292,8 +303,9 @@ function Features() {
                   sx={{
                     position: "absolute",
                     top: "-13px",
-                    left: "180px",
+                    left: {xs:'80px',sm:"180px"},
                     width: {
+                      xs: "280px",
                       sm: "371px",
                       lg: "90%",
                     },
@@ -305,7 +317,7 @@ function Features() {
                 <Typography
                   variant="h2"
                   sx={{
-                    textAlign: { sm: "center", lg: "left" },
+                    textAlign: { xs: "center", sm: "center", lg: "left" },
                     width: { lg: "100%" },
                   }}
                 >
@@ -315,13 +327,13 @@ function Features() {
                 <Box
                   sx={{
                     display: "flex",
-                    justifyContent: { sm: "center", lg: "left" },
+                    justifyContent: { xs: "center", sm: "center", lg: "left" },
                   }}
                 >
                   <Typography
                     sx={{
-                      textAlign: { sm: "center", lg: "left" },
-                      width: { sm: "50%", lg: "80%" },
+                      textAlign: { xs: "center", sm: "center", lg: "left" },
+                      width: { xs: "70%", sm: "50%", lg: "80%" },
                       opacity: "70%",
                     }}
                   >
@@ -335,7 +347,9 @@ function Features() {
                 <Stack
                   spacing={4}
                   direction="row"
-                  sx={{ justifyContent: { sm: "center", lg: "left" } }}
+                  sx={{
+                    justifyContent: { xs: "center", sm: "center", lg: "left" },
+                  }}
                 >
                   <ThemeProvider theme={theme}>
                     <Button

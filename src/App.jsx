@@ -13,14 +13,14 @@ import Footer from "./Components/Footer";
 function App() {
   return (
     <>
-      <Stack spacing={20}>
+      <NavMobile />
+      <Stack spacing={{xs:10,sm:18,lg:20}}>
         <Nav />
-        <NavMobile />
         <Bookmark />
         <Features />
         <Download />
         <Frequently />
-        <Joined /> 
+        <Joined />
       </Stack>
       <Footer />
     </>

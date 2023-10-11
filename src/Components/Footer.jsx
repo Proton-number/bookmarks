@@ -1,12 +1,5 @@
 import React, { useState } from "react";
-import {
-  Box,
-  Typography,
-  Stack,
-  Button,
-  createTheme,
-  ThemeProvider,
-} from "@mui/material";
+import { Box, Typography, Stack } from "@mui/material";
 import { motion } from "framer-motion";
 import bookmark from "/src/images/logo-bookmark.svg";
 import facebook from "/src/images/icon-facebook.svg";
@@ -17,13 +10,14 @@ function Footer() {
     <Box
       sx={{
         p: {
-          sm:'20px',
+          xs:'20px',
+          sm: "20px",
           lg: "25px",
         },
         display: "flex",
         flexDirection: {
-          xs: 'column',
-          sm:'row'
+          xs: "column",
+          sm: "row",
         },
         justifyContent: "space-around",
         alignItems: "center",
@@ -34,7 +28,7 @@ function Footer() {
       <Stack
         direction={{ sm: "row" }}
         sx={{ alignItems: "center" }}
-        spacing={{sm:4, lg: 8 }}
+        spacing={{ xs:3 ,sm: 4, lg: 8 }}
       >
         <Box
           component="img"
@@ -78,9 +72,27 @@ function Footer() {
         </Typography>
       </Stack>
 
-      <Stack direction={{ sm: "row" }} spacing={{ sm:2.5, lg: 4 }}>
-        <Box component="img" src={facebook} />
-        <Box component="img" src={twitter} />
+      <Stack sx={{marginTop:{xs:2, sm:0}}} direction={{ sm: "row" }} spacing={{ xs:2, sm: 2.5, lg: 4 }}>
+        <Box
+          component="img"
+          src={facebook}
+          sx={{
+            "&:hover": {
+              filter:
+                "brightness(0) saturate(100%) invert(23%) sepia(65%) saturate(2645%) hue-rotate(342deg) brightness(87%) contrast(111%)",
+            },
+          }}
+        />
+        <Box
+          component="img"
+          src={twitter}
+          sx={{
+            "&:hover": {
+              filter:
+                "brightness(0) saturate(100%) invert(23%) sepia(65%) saturate(2645%) hue-rotate(342deg) brightness(87%) contrast(111%)",
+            },
+          }}
+        />
       </Stack>
     </Box>
   );

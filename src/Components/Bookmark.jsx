@@ -23,24 +23,34 @@ function Bookmark() {
   });
   return (
     <Stack
-      spacing={{ sm: 8,lg:0 }}
+      spacing={{ xs: 4, sm: 8, lg: 0 }}
       direction={{ xs: "column", sm: "column", lg: "row" }}
       sx={{ alignItems: { lg: "center" }, justifyContent: "space-between" }}
     >
-      <Stack spacing={4} sx={{ p: { sm: "40px", lg: "80px" } }}>
+      <Stack spacing={4} sx={{ p: { xs: "30px", sm: "40px", lg: "80px" } }}>
         <Typography
           variant="h2"
-          sx={{ textAlign: "left", width: { lg: "70%" } }}
+          sx={{ textAlign: { sm: "left" }, width: { lg: "70%" } }}
         >
           A Simple Bookmark Manager
         </Typography>
-        <Typography sx={{ textAlign: "left", width: { sm: "88%", lg: "50%" } }}>
+        <Typography
+          sx={{
+            textAlign: { sm: "left" },
+            width: { sm: "88%", lg: "50%" },
+            opacity: "70%",
+          }}
+        >
           {" "}
           A clean and simple interface to organize your favourite websites. Open
           a new browser tab and see your sites load instantly. Try it for free.{" "}
         </Typography>
 
-        <Stack spacing={4} direction="row" sx={{ justifyContent: "left" }}>
+        <Stack
+          spacing={4}
+          direction="row"
+          sx={{ justifyContent: { xs: "center", sm: "left" } }}
+        >
           <ThemeProvider theme={theme}>
             <Button
               color="primary"
@@ -69,13 +79,14 @@ function Bookmark() {
         sx={{
           backgroundColor: "hsl(227, 57%, 53%)",
           position: "relative",
-          padding: { sm: "210px", lg: "200px" },
+          padding: { xs: "120px", sm: "210px", lg: "200px" },
           borderTopLeftRadius: "50%",
           borderBottomLeftRadius: "50%",
           width: {
+            xs: "20%",
             sm: "12%",
           },
-          left: { sm: "267px", lg: "0" },
+          left: { xs: "92px", sm: "267px", lg: "0" },
         }}
       >
         <Box
@@ -86,8 +97,9 @@ function Bookmark() {
             top: "-30px",
             right: "30px",
             width: {
+              xs: "320px",
               sm: "680px",
-              lg:'100%'
+              lg: "100%",
             },
           }}
         />

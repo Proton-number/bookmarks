@@ -24,7 +24,7 @@ function Joined() {
         sx={{
           backgroundColor: "hsl(228, 68%, 57%)",
           color: "white",
-          p: { sm:'18px', lg: "20px" },
+          p: {xs:'20px', sm:'18px', lg: "20px" },
         }}
       >
         <Typography variant="body2">
@@ -37,14 +37,14 @@ function Joined() {
             alignItems: "center",
           }}
         >
-          <Typography sx={{ width: "42%" }}>
+          <Typography sx={{ width: {sm:'45%'} }}>
             stay up-date with what we're doing
           </Typography>
         </Box>
 
         <Stack
           spacing={3}
-          direction={{ sm: "row" }}
+          direction={{ xs:'column', sm: "row" }}
           sx={{
             justifyContent: "center",
             alignItems: "center",
@@ -55,7 +55,7 @@ function Joined() {
             type="email"
             InputProps={{
               style: {
-                borderRadius: "25px",
+                borderRadius: "8px",
                 color: "black",
                 backgroundColor:'white'
               },

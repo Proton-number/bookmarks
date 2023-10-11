@@ -41,7 +41,7 @@ function Frequently() {
             alignItems: "center",
           }}
         >
-          <Typography sx={{ width: "42%" }}>
+          <Typography sx={{ width: {  xs: "70%", sm: "42%" } }}>
             Here are some of our FAQS. If you have any other questions you'd
             like answered please feel free to email us.
           </Typography>
@@ -69,7 +69,9 @@ function Frequently() {
                 </ThemeProvider>
               }
             >
-              <Typography sx={{"&:hover":{color:'hsl(0, 100%, 50%)'}}}>What is Bookmark?</Typography>
+              <Typography sx={{ "&:hover": { color: "hsl(0, 100%, 50%)" } }}>
+                What is Bookmark?
+              </Typography>
             </AccordionSummary>
 
             <AccordionDetails>

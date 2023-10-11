@@ -36,7 +36,7 @@ function Download() {
             alignItems: "center",
           }}
         >
-          <Typography sx={{ width: "50%" }}>
+          <Typography sx={{ width: {xs:'70%',sm:"50%"} }}>
             We've got more browsers in the pipeline. Please do not let us know
             if you've got a favorite you'd like us to prioritize.
           </Typography>
