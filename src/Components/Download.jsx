@@ -24,7 +24,7 @@ function Download() {
   });
   return (
     <>
-      <Stack spacing={4} sx={{ marginTop: { xs: "300px", sm: "90px" } }}>
+      <Stack spacing={4} sx={{ marginTop: { xs: "300px", sm: "360px", lg:'90px' } }}>
         <Typography variant="h3">
           <b>Download the extension</b>
         </Typography>

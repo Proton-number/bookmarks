@@ -28,6 +28,7 @@ function Bookmark() {
       sx={{
         alignItems: { lg: "center" },
         position: { xs: "relative", lg: "initial" },
+        zIndex:1
       }}
     >
       <Stack spacing={4} sx={{ p: { xs: "30px", sm: "40px", lg: "80px" } }}>
@@ -91,7 +92,7 @@ function Bookmark() {
             xs: "20%",
             sm: "12%",
           },
-          top: { xs: "470px", sm: "auto", lg: "auto" },
+          top: { xs: "470px", sm: "320px", lg: "auto" },
           right: 0,
         }}
       >

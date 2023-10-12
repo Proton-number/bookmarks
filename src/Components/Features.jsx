@@ -100,7 +100,7 @@ function Features() {
                     xs: "4%",
                     lg: "12%",
                   },
-                  bottom: { xs: "-1170px", sm: "auto", lg: "auto" },
+                  bottom: { xs: "-1170px", sm: "-960px", lg: "auto" },
                   left: 0,
                   zIndex: 1,
                 }}
@@ -192,7 +192,7 @@ function Features() {
                     xs: "4%",
                     lg: "12%",
                   },
-                  bottom: { xs: "-1180px", sm: "auto", lg: "auto" },
+                  bottom: { xs: "-1180px", sm: "-970px", lg: "auto" },
                   zIndex: 1,
                 }}
               >
@@ -285,7 +285,7 @@ function Features() {
                     xs: "4%",
                     lg: "12%",
                   },
-                  bottom: { xs: "-1180px", sm: "auto", lg: "auto" },
+                  bottom: { xs: "-1180px",sm: "-970px", lg: "auto" },
                   zIndex: 1,
                 }}
               >

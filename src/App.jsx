@@ -16,7 +16,7 @@ function App() {
       <NavMobile />
       <Stack spacing={{ xs: 10, sm: 18, lg: 15 }}>
         <Nav />
-        <Stack spacing={{ xs: 35, sm: 0, lg: 0 }}>
+        <Stack spacing={{ xs: 35, sm: 56, lg: 0 }}>
           <Bookmark />
           <Features />
         </Stack>
