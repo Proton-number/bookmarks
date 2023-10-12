@@ -85,25 +85,24 @@ function Features() {
 
           {tabIndex === 0 && (
             <Stack
-              spacing={{ lg: 30 }}
+              spacing={{ lg: 98 }}
+              sx={{ justifyContent: "space-between" }}
               direction={{ sm: "column", lg: "row" }}
-              sx={{
-                display: "flex",
-                alignItems: "center",
-              }}
             >
               <Box
                 sx={{
                   backgroundColor: "hsl(227, 57%, 53%)",
-                  position: "relative",
-                  padding: { xs: "130px", sm: "160px", lg: "200px" },
+                  position: "absolute",
+                  padding: { xs: "127px", sm: "160px", lg: "200px" },
                   borderTopRightRadius: "50%",
                   borderBottomRightRadius: "50%",
                   width: {
                     xs: "4%",
                     lg: "12%",
                   },
-                  left: { xs: "-68px", sm: "-231px", lg: "0" },
+                  bottom: { xs: "-1170px", sm: "auto", lg: "auto" },
+                  left: 0,
+                  zIndex: 1,
                 }}
               >
                 <Box
@@ -114,15 +113,15 @@ function Features() {
                     top: "-2px",
                     left: { xs: "50px", sm: "130px" },
                     width: {
-                      xs: "280px",
+                      xs: "310px",
                       sm: "420px",
-                      lg: "100%",
+                      lg: "94%",
                     },
                   }}
                 />
               </Box>
 
-              <Stack spacing={1.4}>
+              <Stack spacing={1.4} sx={{ p: { lg: 10 } }}>
                 <Typography
                   variant="h2"
                   sx={{
@@ -180,26 +179,21 @@ function Features() {
           )}
 
           {tabIndex === 1 && (
-            <Stack
-              spacing={{ lg: 30 }}
-              direction={{ sm: "column", lg: "row" }}
-              sx={{
-                display: "flex",
-                alignItems: "center",
-              }}
-            >
+            <Stack spacing={{ lg: 98 }} direction={{ sm: "column", lg: "row" }}>
               <Box
                 sx={{
                   backgroundColor: "hsl(227, 57%, 53%)",
-                  position: "relative",
-                  left: { xs: "-58px", sm: "-231px", lg: "-40px" },
-                  padding: { xs: "150px", sm: "160px", lg: "200px" },
+                  position: "absolute",
+                  left: 0,
+                  padding: { xs: "135px", sm: "160px", lg: "200px" },
                   borderTopRightRadius: "50%",
                   borderBottomRightRadius: "50%",
                   width: {
                     xs: "4%",
                     lg: "12%",
                   },
+                  bottom: { xs: "-1180px", sm: "auto", lg: "auto" },
+                  zIndex: 1,
                 }}
               >
                 <Box
@@ -208,17 +202,17 @@ function Features() {
                   sx={{
                     position: "absolute",
                     top: "-13px",
-                    left: {xs:'80px',sm:"180px"},
+                    left: { xs: "80px", sm: "180px" },
                     width: {
                       xs: "280px",
                       sm: "371px",
-                      lg: "90%",
+                      lg: "84%",
                     },
                   }}
                 />
               </Box>
 
-              <Stack spacing={1.4}>
+              <Stack spacing={1.4} sx={{ p: { lg: 10 } }}>
                 <Typography
                   variant="h2"
                   sx={{
@@ -276,25 +270,23 @@ function Features() {
           )}
           {tabIndex === 2 && (
             <Stack
-              spacing={{ lg: 30 }}
+              spacing={{ lg: 98 }}
               direction={{ xs: "column", sm: "column", lg: "row" }}
-              sx={{
-                display: "flex",
-                alignItems: "center",
-              }}
             >
               <Box
                 sx={{
                   backgroundColor: "hsl(227, 57%, 53%)",
-                  position: "relative",
-                  left: { xs: "-58px", sm: "-231px", lg: "-40px" },
-                  padding: { xs: "150px", sm: "160px", lg: "200px" },
+                  position: "absolute",
+                  left: 0,
+                  padding: { xs: "135px", sm: "160px", lg: "200px" },
                   borderTopRightRadius: "50%",
                   borderBottomRightRadius: "50%",
                   width: {
                     xs: "4%",
                     lg: "12%",
                   },
+                  bottom: { xs: "-1180px", sm: "auto", lg: "auto" },
+                  zIndex: 1,
                 }}
               >
                 <Box
@@ -303,17 +295,17 @@ function Features() {
                   sx={{
                     position: "absolute",
                     top: "-13px",
-                    left: {xs:'80px',sm:"180px"},
+                    left: { xs: "80px", sm: "180px" },
                     width: {
                       xs: "280px",
                       sm: "371px",
-                      lg: "90%",
+                      lg: "84%",
                     },
                   }}
                 />
               </Box>
 
-              <Stack spacing={1.4}>
+              <Stack spacing={1.4} sx={{ p: { lg: 10 } }}>
                 <Typography
                   variant="h2"
                   sx={{

@@ -14,14 +14,16 @@ function App() {
   return (
     <>
       <NavMobile />
-      <Stack spacing={{xs:10,sm:18,lg:20}}>
+      <Stack spacing={{ xs: 10, sm: 18, lg: 15 }}>
         <Nav />
-        <Bookmark />
-        <Features />
-        <Download />
-        <Frequently />
-        <Joined />
+        <Stack spacing={{ xs: 35, sm: 0, lg: 0 }}>
+          <Bookmark />
+          <Features />
+        </Stack>
       </Stack>
+      <Download />
+      <Frequently />
+      <Joined />
       <Footer />
     </>
   );

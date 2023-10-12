@@ -15,7 +15,6 @@ import opera from "/src/images/logo-opera.svg";
 import dots from "/src/images/bg-dots.svg";
 
 function Download() {
-  
   const theme = createTheme({
     palette: {
       primary: {
@@ -25,7 +24,7 @@ function Download() {
   });
   return (
     <>
-      <Stack spacing={4}>
+      <Stack spacing={4} sx={{ marginTop: { xs: "300px", sm: "90px" } }}>
         <Typography variant="h3">
           <b>Download the extension</b>
         </Typography>
@@ -36,15 +35,15 @@ function Download() {
             alignItems: "center",
           }}
         >
-          <Typography sx={{ width: {xs:'70%',sm:"50%"} }}>
+          <Typography sx={{ width: { xs: "70%", sm: "50%" } }}>
             We've got more browsers in the pipeline. Please do not let us know
             if you've got a favorite you'd like us to prioritize.
           </Typography>
         </Box>
 
-              <Stack
-                  spacing={4}
-          direction={{ xs: "column", sm:'column', lg: "row" }}
+        <Stack
+          spacing={4}
+          direction={{ xs: "column", sm: "column", lg: "row" }}
           sx={{ justifyContent: "center", alignItems: "center" }}
         >
           <Paper elevation={12}>
@@ -62,17 +61,17 @@ function Download() {
               </Typography>
               <Box component={motion.img} src={dots} />
               <ThemeProvider theme={theme}>
-              <Button
-                variant="contained"
-                disableElevation
-                sx={{ textTransform: "none", padding: "10px" }}
-              >
-                <b> Add & Install Extension</b>
-              </Button>
-             </ThemeProvider>
+                <Button
+                  variant="contained"
+                  disableElevation
+                  sx={{ textTransform: "none", padding: "10px" }}
+                >
+                  <b> Add & Install Extension</b>
+                </Button>
+              </ThemeProvider>
             </Stack>
           </Paper>
-          <Paper style={{marginTop:{lg:'100px'}}} elevation={12}>
+          <Paper style={{ marginTop: { lg: "100px" } }} elevation={12}>
             <Stack spacing={3} sx={{ padding: "15px" }}>
               <Box>
                 <Box
@@ -87,19 +86,19 @@ function Download() {
               </Typography>
               <Box component={motion.img} src={dots} />
               <ThemeProvider theme={theme}>
-              <Button
-                variant="contained"
-                disableElevation
-                sx={{ textTransform: "none", padding: "10px" }}
-              >
-               <b> Add & Install Extension</b>
-              </Button>
-             </ThemeProvider>
+                <Button
+                  variant="contained"
+                  disableElevation
+                  sx={{ textTransform: "none", padding: "10px" }}
+                >
+                  <b> Add & Install Extension</b>
+                </Button>
+              </ThemeProvider>
             </Stack>
           </Paper>
-         
-          <Paper   elevation={12}>
-            <Stack  spacing={3} sx={{ padding: "15px"}}>
+
+          <Paper elevation={12}>
+            <Stack spacing={3} sx={{ padding: "15px" }}>
               <Box>
                 <Box
                   component={motion.img}
@@ -113,17 +112,16 @@ function Download() {
               </Typography>
               <Box component={motion.img} src={dots} />
               <ThemeProvider theme={theme}>
-              <Button
-                variant="contained"
-                disableElevation
-                sx={{ textTransform: "none", padding: "10px" }}
-              >
-                 <b> Add & Install Extension</b>
-              </Button>
-             </ThemeProvider>
+                <Button
+                  variant="contained"
+                  disableElevation
+                  sx={{ textTransform: "none", padding: "10px" }}
+                >
+                  <b> Add & Install Extension</b>
+                </Button>
+              </ThemeProvider>
             </Stack>
           </Paper>
-          
         </Stack>
       </Stack>
     </>

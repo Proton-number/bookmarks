@@ -25,7 +25,10 @@ function Bookmark() {
     <Stack
       spacing={{ xs: 4, sm: 8, lg: 0 }}
       direction={{ xs: "column", sm: "column", lg: "row" }}
-      sx={{ alignItems: { lg: "center" }, justifyContent: "space-between" }}
+      sx={{
+        alignItems: { lg: "center" },
+        position: { xs: "relative", lg: "initial" },
+      }}
     >
       <Stack spacing={4} sx={{ p: { xs: "30px", sm: "40px", lg: "80px" } }}>
         <Typography
@@ -49,7 +52,9 @@ function Bookmark() {
         <Stack
           spacing={4}
           direction="row"
-          sx={{ justifyContent: { xs: "center", sm: "left" } }}
+          sx={{
+            justifyContent: { xs: "center", sm: "left" },
+          }}
         >
           <ThemeProvider theme={theme}>
             <Button
@@ -78,7 +83,7 @@ function Bookmark() {
       <Box
         sx={{
           backgroundColor: "hsl(227, 57%, 53%)",
-          position: "relative",
+          position: "absolute",
           padding: { xs: "120px", sm: "210px", lg: "200px" },
           borderTopLeftRadius: "50%",
           borderBottomLeftRadius: "50%",
@@ -86,7 +91,8 @@ function Bookmark() {
             xs: "20%",
             sm: "12%",
           },
-          left: { xs: "92px", sm: "267px", lg: "0" },
+          top: { xs: "470px", sm: "auto", lg: "auto" },
+          right: 0,
         }}
       >
         <Box

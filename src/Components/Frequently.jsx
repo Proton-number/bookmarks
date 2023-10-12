@@ -30,7 +30,13 @@ function Frequently() {
 
   return (
     <>
-      <Stack spacing={2}>
+      <Stack
+        spacing={2}
+        sx={{
+          marginTop: { xs: "40px", lg: "100px" },
+          marginBottom: { xs: "40px", lg: "50px" },
+        }}
+      >
         <Typography variant="h3">
           <b>Frequently Asked Questions</b>
         </Typography>
@@ -41,7 +47,7 @@ function Frequently() {
             alignItems: "center",
           }}
         >
-          <Typography sx={{ width: {  xs: "70%", sm: "42%" } }}>
+          <Typography sx={{ width: { xs: "70%", sm: "42%" } }}>
             Here are some of our FAQS. If you have any other questions you'd
             like answered please feel free to email us.
           </Typography>
