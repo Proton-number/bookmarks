@@ -86,7 +86,7 @@ function Features() {
           {tabIndex === 0 && (
             <Stack
               spacing={{ lg: 98 }}
-              sx={{ justifyContent: "space-between",  position: "relative", }}
+              sx={{ justifyContent: "space-between", position: "relative" }}
               direction={{ sm: "column", lg: "row" }}
             >
               <Box
@@ -100,7 +100,7 @@ function Features() {
                     xs: "4%",
                     lg: "12%",
                   },
-                  bottom: { xs: "-300px", sm: "-960px", lg: "auto" },
+                  bottom: { xs: "-300px", sm: "-350px", lg: "auto" },
                   left: 0,
                   zIndex: 1,
                 }}
@@ -179,7 +179,11 @@ function Features() {
           )}
 
           {tabIndex === 1 && (
-            <Stack spacing={{ lg: 98 }} direction={{ sm: "column", lg: "row" }} sx={{ position: "relative", }}>
+            <Stack
+              spacing={{ lg: 98 }}
+              direction={{ sm: "column", lg: "row" }}
+              sx={{ position: "relative" }}
+            >
               <Box
                 sx={{
                   backgroundColor: "hsl(227, 57%, 53%)",
@@ -192,7 +196,7 @@ function Features() {
                     xs: "4%",
                     lg: "12%",
                   },
-                  bottom: { xs: "-292px", sm: "-970px", lg: "auto" },
+                  bottom: { xs: "-292px", sm: "-350px", lg: "auto" },
                   zIndex: 1,
                 }}
               >
@@ -272,7 +276,7 @@ function Features() {
             <Stack
               spacing={{ lg: 98 }}
               direction={{ xs: "column", sm: "column", lg: "row" }}
-              sx={{ position: "relative", }}
+              sx={{ position: "relative" }}
             >
               <Box
                 sx={{
@@ -286,7 +290,7 @@ function Features() {
                     xs: "4%",
                     lg: "12%",
                   },
-                  bottom: { xs: "-292px",sm: "-970px", lg: "auto" },
+                  bottom: { xs: "-292px", sm: "-350px", lg: "auto" },
                   zIndex: 1,
                 }}
               >

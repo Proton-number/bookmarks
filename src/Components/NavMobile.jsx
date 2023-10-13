@@ -23,6 +23,9 @@ function NavMobile() {
       primary: {
         main: "hsl(0, 0%, 13%)",
       },
+      secondary: {
+        main: "hsl(0, 0%, 100%)",
+      },
     },
   });
 
@@ -51,25 +54,46 @@ function NavMobile() {
       </AppBar>
 
       <Drawer
+      PaperProps={{
+        sx: {
+          background: 'rgba(47,56,76,0.5)',
+          backdropFilter: 'blur(19px)'
+        },
+        }}
+        id='drawer'
         anchor="left"
         open={isDrawerOpen}
         onClose={() => setisDrawerOpen(false)}
       >
-        <Box width="250px" role="presentation">
-          <Toolbar>
+        <Box width="350px" role="presentation" >
+          <Toolbar sx={{justifyContent:'space-between'}}>
+            <Box
+              component="img"
+              src={bookmark}
+              sx={{
+                filter:
+                  " invert(100%) sepia(2%) saturate(83%) hue-rotate(120deg) brightness(120%) contrast(100%)",
+              }}
+            />
+            <ThemeProvider theme={theme}>
             <IconButton
               edge="start"
-              color="inherit"
+              color="secondary"
               aria-label="close-icon"
               onClick={() => setisDrawerOpen(false)}
             >
               <CloseIcon fontSize="large" />
             </IconButton>
+           </ThemeProvider>
           </Toolbar>
 
-          {/* <Stack spacing={3} style={{ textAlign: "center", padding: "35px" }}>
+          <Stack spacing={8} style={{ textAlign: "center",color:'white', padding: "35px" }}>
+            <Typography variant='h6' sx={{cursor:'pointer'}}>FEATURES</Typography>
+            <Typography variant='h6' sx={{cursor:'pointer'}}>PRICING</Typography>
+            <Typography variant='h6' sx={{cursor:'pointer'}}>CONTACT</Typography>
+            <Button variant="outlined" sx={{color:'white', borderColor:'white'}}>LOGIN</Button>
            </Stack>
-        */}
+       
         </Box>
       </Drawer>
     </>
