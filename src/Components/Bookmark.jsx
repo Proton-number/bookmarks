@@ -33,12 +33,20 @@ function Bookmark() {
     >
       <Stack spacing={4} sx={{ p: { xs: "30px", sm: "40px", lg: "80px" } }}>
         <Typography
+          component={motion.h2}
+          initial={{opacity:0,  rotate: -8 }}
+          animate={{ opacity:1,  rotate: 0 }}
+          transition={{duration:.8}}
           variant="h2"
           sx={{ textAlign: { sm: "left" }, width: { lg: "70%" } }}
         >
           A Simple Bookmark Manager
         </Typography>
         <Typography
+           component={motion.p}
+           initial={{opacity:0,  y:15 }}
+           animate={{ opacity:1,  y: 0 }}
+           transition={{duration:1, type:'spring'}}
           sx={{
             textAlign: { sm: "left" },
             width: { sm: "88%", lg: "50%" },
@@ -82,6 +90,10 @@ function Bookmark() {
       </Stack>
 
       <Box
+          component={motion.div}
+          initial={{opacity:0,  x:15 }}
+          animate={{ opacity:1,  x: 0 }}
+          transition={{duration:.5, type:'spring'}}
         sx={{
           backgroundColor: "hsl(227, 57%, 53%)",
           position: "absolute",
@@ -97,6 +109,9 @@ function Bookmark() {
         }}
       >
         <Box
+           initial={{opacity:0,  x:15 }}
+           animate={{ opacity:1,  x: 0 }}
+           transition={{duration:.8, type:'spring'}}
           component={motion.img}
           src={hero}
           sx={{

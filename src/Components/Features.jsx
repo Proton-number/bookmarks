@@ -90,6 +90,10 @@ function Features() {
               direction={{ sm: "column", lg: "row" }}
             >
               <Box
+                component={motion.div}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
                 sx={{
                   backgroundColor: "hsl(227, 57%, 53%)",
                   position: "absolute",
@@ -121,7 +125,14 @@ function Features() {
                 />
               </Box>
 
-              <Stack spacing={1.4} sx={{ p: { lg: 10 } }}>
+              <Stack
+                component={motion.div}
+                initial={{ y: -20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ type: "spring" }}
+                spacing={1.4}
+                sx={{ p: { lg: 10 } }}
+              >
                 <Typography
                   variant="h2"
                   sx={{
@@ -185,6 +196,10 @@ function Features() {
               sx={{ position: "relative" }}
             >
               <Box
+                component={motion.div}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
                 sx={{
                   backgroundColor: "hsl(227, 57%, 53%)",
                   position: "absolute",
@@ -216,7 +231,14 @@ function Features() {
                 />
               </Box>
 
-              <Stack spacing={1.4} sx={{ p: { lg: 10 } }}>
+              <Stack
+                component={motion.div}
+                initial={{ y: -20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ type: "spring" }}
+                spacing={1.4}
+                sx={{ p: { lg: 10 } }}
+              >
                 <Typography
                   variant="h2"
                   sx={{
@@ -279,6 +301,10 @@ function Features() {
               sx={{ position: "relative" }}
             >
               <Box
+                component={motion.div}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
                 sx={{
                   backgroundColor: "hsl(227, 57%, 53%)",
                   position: "absolute",
@@ -310,7 +336,14 @@ function Features() {
                 />
               </Box>
 
-              <Stack spacing={1.4} sx={{ p: { lg: 10 } }}>
+              <Stack
+                component={motion.div}
+                initial={{ y: -20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ type: "spring" }}
+                spacing={1.4}
+                sx={{ p: { lg: 10 } }}
+              >
                 <Typography
                   variant="h2"
                   sx={{

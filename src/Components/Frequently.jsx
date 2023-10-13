@@ -71,7 +71,10 @@ function Frequently() {
               aria-controls="panel1-content"
               expandIcon={
                 <ThemeProvider theme={theme}>
-                  <ExpandMoreIcon color="primary" />
+                  <ExpandMoreIcon
+                    color="primary"
+                    sx={{ "&:hover": { color: "hsl(0, 100%, 50%)" } }}
+                  />
                 </ThemeProvider>
               }
             >
@@ -98,11 +101,16 @@ function Frequently() {
               aria-controls="panel2-content"
               expandIcon={
                 <ThemeProvider theme={theme}>
-                  <ExpandMoreIcon color="primary" />
+                  <ExpandMoreIcon
+                    color="primary"
+                    sx={{ "&:hover": { color: "hsl(0, 100%, 50%)" } }}
+                  />
                 </ThemeProvider>
               }
             >
-              <Typography>How can i request a new browser?</Typography>
+              <Typography sx={{ "&:hover": { color: "hsl(0, 100%, 50%)" } }}>
+                How can i request a new browser?
+              </Typography>
             </AccordionSummary>
 
             <AccordionDetails>
@@ -123,11 +131,16 @@ function Frequently() {
               aria-controls="panel3-content"
               expandIcon={
                 <ThemeProvider theme={theme}>
-                  <ExpandMoreIcon color="primary" />
+                  <ExpandMoreIcon
+                    color="primary"
+                    sx={{ "&:hover": { color: "hsl(0, 100%, 50%)" } }}
+                  />
                 </ThemeProvider>
               }
             >
-              <Typography>Is there a mobile app?</Typography>
+              <Typography sx={{ "&:hover": { color: "hsl(0, 100%, 50%)" } }}>
+                Is there a mobile app?
+              </Typography>
             </AccordionSummary>
 
             <AccordionDetails>
@@ -148,11 +161,16 @@ function Frequently() {
               aria-controls="panel4-content"
               expandIcon={
                 <ThemeProvider theme={theme}>
-                  <ExpandMoreIcon color="primary" />
+                  <ExpandMoreIcon
+                    color="primary"
+                    sx={{ "&:hover": { color: "hsl(0, 100%, 50%)" } }}
+                  />
                 </ThemeProvider>
               }
             >
-              <Typography>What about other Chromium browsers?</Typography>
+              <Typography sx={{ "&:hover": { color: "hsl(0, 100%, 50%)" } }}>
+                What about other Chromium browsers?
+              </Typography>
             </AccordionSummary>
 
             <AccordionDetails>

@@ -51,7 +51,7 @@ function Joined() {
           }}
         >
           <TextField
-            placeholder="Enter your email address"
+            placeholder="Enter your email address..."
             type="email"
             InputProps={{
               style: {
