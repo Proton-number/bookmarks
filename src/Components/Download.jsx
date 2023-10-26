@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import {
   Box,
   Typography,
@@ -8,13 +8,22 @@ import {
   ThemeProvider,
   Paper,
 } from "@mui/material";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import chrome from "/src/images/logo-chrome.svg";
 import firefox from "/src/images/logo-firefox.svg";
 import opera from "/src/images/logo-opera.svg";
 import dots from "/src/images/bg-dots.svg";
 
 function Download() {
+  const targetRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+    offset: ["start end ", "end start"],
+  });
+
+  const scale = useTransform(scrollYProgress, [0, 0.5, 1], [0.6, 0.9, 1]);
+  const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0.5, 1.9, 2])
+
   const theme = createTheme({
     palette: {
       primary: {
@@ -24,8 +33,16 @@ function Download() {
   });
   return (
     <>
-      <Stack spacing={4} sx={{ marginTop: { xs: "300px", sm: "360px", lg:'90px' } }}>
-        <Typography variant="h3">
+      <Stack
+        component={motion.div}
+        ref={targetRef}
+        style={{ opacity, scale }}
+        spacing={4}
+        sx={{ marginTop: { xs: "300px", sm: "360px", lg: "90px" } }}
+      >
+        <Typography
+          variant="h3"
+        >
           <b>Download the extension</b>
         </Typography>
         <Box
